@@ -1,12 +1,12 @@
-import { prisma } from "@/server/db/prisma";
+import { prisma } from "@/backend/db/prisma";
 import {
   isPrismaNotFoundError,
   isPrismaUniqueConstraintError,
-} from "@/server/prisma/errors";
+} from "@/backend/prisma/errors";
 import type {
   CreateUserInput,
   UpdateUserInput,
-} from "@/shared/validations/user";
+} from "@/backend/validations/user";
 
 // 领域错误:由 service 抛出,路由层据此映射 HTTP 状态码。
 // service 只关心"业务上发生了什么",不关心 HTTP。

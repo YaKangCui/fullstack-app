@@ -3,8 +3,8 @@ import {
   UserEmailTakenError,
   createUser,
   listUsers,
-} from "@/server/users/user.service";
-import { createUserSchema } from "@/shared/validations/user";
+} from "@/backend/users/user.service";
+import { createUserSchema } from "@/backend/validations/user";
 
 // GET /api/users —— 获取用户列表
 export async function GET() {

@@ -6,8 +6,8 @@ import {
   deleteUser,
   getUser,
   updateUser,
-} from "@/server/users/user.service";
-import { updateUserSchema } from "@/shared/validations/user";
+} from "@/backend/users/user.service";
+import { updateUserSchema } from "@/backend/validations/user";
 
 // Next.js 16: params 是异步的,需要 await ctx.params。
 // RouteContext<'/api/users/[id]'> 是全局类型助手,由 next dev/build 自动生成。
